@@ -1,0 +1,60 @@
+#  }
+
+#}
+
+option domain-name "angelrr.edu";
+
+option domain-name-servers 192.168.13.2;
+
+
+
+default-lease-time 600;
+
+max-lease-time 7200;
+
+
+
+ddns-updates on;
+
+ddns-update-style interim;
+
+
+
+update-static-leases on;
+
+
+
+ddns-domainname "angelrr.edu";
+
+ddns-rev-domainname "in-addr.arpa";
+
+
+
+zone angelrr.edu
+
+        { primary 192.168.13.2; }
+
+zone 13.168.192.in-addr.arpa
+
+        { primary 192.168.13.2; }
+
+
+
+subnet 192.168.13.0 netmask 255.255.255.0 {
+
+        range 192.168.13.100 192.168.13.150;
+
+        option broadcast-address 192.168.13.255;
+
+        option subnet-mask 255.255.255.0;
+
+        option routers 192.168.13.1;
+
+}
+
+
+
+
+
+
+
