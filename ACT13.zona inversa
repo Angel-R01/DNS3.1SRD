@@ -1,0 +1,50 @@
+$ORIGIN .
+
+$TTL 384800	; 4 days 10 hours 53 minutes 20 seconds
+
+13.168.192.in-addr.arpa	IN SOA	angelrr-linux.angelrr.edu. root.angelrr.edu. (
+
+				57         ; serial
+
+				360000     ; refresh (4 days 4 hours)
+
+				3600       ; retry (1 hour)
+
+				3600000    ; expire (5 weeks 6 days 16 hours)
+
+				360000     ; minimum (4 days 4 hours)
+
+				)
+
+			NS	angelrr-linux.angelrr.edu.
+
+			NS	angelrr-slave.angelrr.edu.
+
+$ORIGIN 13.168.192.in-addr.arpa.
+
+$TTL 300	; 5 minutes
+
+101			PTR	angelrr-cliente.angelrr.edu.
+
+$TTL 384800	; 4 days 10 hours 53 minutes 20 seconds
+
+2			PTR	aliasangelrr.angelrr.edu.
+
+			PTR	angelrr-linux.angelrr.edu.
+
+20			PTR	angelrr-slave.angelrr.edu.
+
+$TTL 700	; 11 minutes 40 seconds
+
+222			PTR	prueba2.angelrr.edu.
+
+$TTL 384800	; 4 days 10 hours 53 minutes 20 seconds
+
+3			PTR	PC-01.angelrr.edu.
+
+50			PTR	otro.angelrr.edu.
+
+$TTL 300	; 5 minutes
+
+70			PTR	angelrr-cliente.angelrr.edu.
+
