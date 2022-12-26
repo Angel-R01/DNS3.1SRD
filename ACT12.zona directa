@@ -1,0 +1,40 @@
+;
+
+; BIND reverse data file for broadcast zone
+
+;
+
+$TTL	604800 ; 1 week
+
+@	IN	SOA	angelrr-linux.angelrr.edu. root.angelrr.edu. (
+
+			      1		; Serial no
+
+			 360000		; Refresh
+
+			   3600		; Retry
+
+			 360000		; Expire
+
+			   3600		; default ttl
+
+					)
+
+
+
+
+
+					IN	NS	angelrr-linux.angelrr.edu.
+
+					IN	NS	angelrr-slave.angelrr.edu.
+
+angelrr-linux.angelrr.edu.		IN	A	192.168.13.2
+
+PC-01.angelrr.edu.			IN	A	192.168.13.3
+
+otro.angelrr.edu.			IN	A	192.168.13.4
+
+angelrr-slave.angelrr.edu.		IN	A	192.168.13.20
+
+aliasangelrr				IN	CNAME	angelrr-linux.angelrr.edu.
+
