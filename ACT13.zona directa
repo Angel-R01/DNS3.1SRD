@@ -1,0 +1,46 @@
+$ORIGIN .
+
+$TTL 604800	; 1 week
+
+angelrr.edu		IN SOA	angelrr-linux.angelrr.edu. root.angelrr.edu. (
+
+				60         ; serial
+
+				360000     ; refresh (4 days 4 hours)
+
+				3600       ; retry (1 hour)
+
+				360000     ; expire (4 days 4 hours)
+
+				3600       ; minimum (1 hour)
+
+				)
+
+			NS	angelrr-linux.angelrr.edu.
+
+			NS	angelrr-slave.angelrr.edu.
+
+$ORIGIN angelrr.edu.
+
+aliasangelrr		CNAME	angelrr-linux
+
+$TTL 300	; 5 minutes
+
+angelrr-cliente		A	192.168.13.70
+
+			TXT	"008588db667a58514d78ac1693e8bdb047"
+
+$TTL 604800	; 1 week
+
+angelrr-linux		A	192.168.13.2
+
+angelrr-slave		A	192.168.13.20
+
+otro			A	192.168.13.50
+
+PC-01			A	192.168.13.3
+
+$TTL 500	; 8 minutes 20 seconds
+
+prueba			A	192.168.13.7
+
